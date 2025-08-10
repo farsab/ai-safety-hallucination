@@ -63,7 +63,5 @@ python main.py --query "What is retrieval-augmented generation and how does it r
     └── test_pipeline.py
 ```
 
-### Notes
+### Note
 - Default models in `config.yaml` are small and convenient for demo. Swap to larger ones for better quality.
-- **Citations** printed by `main.py` reflect the retrieved context files.
-- This is a teaching repo; adapt guardrails to your product’s risk model.
