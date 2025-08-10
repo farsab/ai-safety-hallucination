@@ -40,7 +40,7 @@ class SafetyPipeline:
         # 1) Prompt-injection heuristic
         if self.prompt_injection_detector.detect(user_prompt):
             return {
-                "answer": "⚠️ Prompt rejected: possible injection attempt.",
+                "answer": "Prompt rejected: possible injection attempt.",
                 "citations": [],
                 "reasons": {"prompt_injection": "triggered"},
             }
@@ -89,7 +89,7 @@ class SafetyPipeline:
         # 7) Toxicity check on output
         if self.toxic_filter.is_toxic(text):
             return {
-                "answer": "⚠️ Response blocked due to toxic content.",
+                "answer": "Response blocked due to toxic content.",
                 "citations": [],
                 "reasons": reasons,
             }
