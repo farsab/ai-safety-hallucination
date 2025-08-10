@@ -1,0 +1,2 @@
+Prompt injection attempts often include phrases like 'ignore previous instructions' or 'disable guardrails'.
+Defensive strategies include input heuristics, isolation/sandboxing, and allowing the model to politely refuse.

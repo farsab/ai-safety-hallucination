@@ -1,0 +1,2 @@
+Retrieval-Augmented Generation (RAG) reduces hallucinations by grounding the model's answer in relevant documents.
+The system retrieves context using vector search (e.g., FAISS) over domain texts, then conditions generation on that context.

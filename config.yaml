@@ -1,0 +1,21 @@
+model:
+  name: "gpt2"
+  max_new_tokens: 200
+  temperature: 0.7
+
+retrieval:
+  use_retrieval: true
+  faiss_index_path: "data/index.faiss"
+  meta_path: "data/meta.json"
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  top_k: 3
+  min_query_sim: 0.40    # OOD gate on the query
+
+confidence:
+  min_confidence: 0.35   # token-probability mean across generated tokens
+
+grounding:
+  min_sim: 0.30          # semantic similarity of answer vs. retrieved snippets
+
+filters:
+  toxic_threshold: 0.7

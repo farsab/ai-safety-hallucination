@@ -1,0 +1,2 @@
+Confidence estimation from token probabilities provides a lightweight, model-native signal.
+If the mean probability of generated tokens is low, the system can refuse to answer to avoid unreliable outputs.
